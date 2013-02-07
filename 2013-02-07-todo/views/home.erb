@@ -1,0 +1,8 @@
+<section>
+  <% @rows.each do |row| %>
+    <article>
+      <div id='item'>Item: <%= row['item'] %></div>
+      <div id='details'>Details: <%= row['details'] %></div>
+    </article>
+  <% end %>
+</section>
