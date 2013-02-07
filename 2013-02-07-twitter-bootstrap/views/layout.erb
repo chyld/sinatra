@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' href='/css/style.css'>
+    <script src='/js/jquery-1.9.1.js'></script>
+    <script src='/bootstrap/js/bootstrap.js'></script>
+    <title>Twitter Bootstrap Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+
+          <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+              <a class="brand" href="#">Title</a>
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="span4"><h1>Hello TB</h1></div>
+        <div class="span8">
+          <a class='btn btn-primary' href='#'>Hello There</a>
+          <a class='btn btn-info' href='#'>More Text</a>
+          <button class='btn btn-danger btn-mini'>Text Please</button>
+          <i class="icon-search"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span3">
+
+          <div class="btn-group">
+            <button class="btn">1</button>
+            <button class="btn btn-danger">2</button>
+            <button class="btn">3</button>
+          </div>
+
+        </div>
+        <div class="span3">
+
+          <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              Action
+              <span class="caret"></span>
+            </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li><a tabindex="-1" href="#">Action</a></li>
+                <li><a tabindex="-1" href="#">Another action</a></li>
+                <li><a tabindex="-1" href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">Separated link</a></li>
+              </ul>
+            </div>
+
+        </div>
+        <div class="span3">e</div>
+        <div class="span3">f</div>
+      </div>
+      <div class="row">
+        <div class="span2">g</div>
+        <div class="span10">
+          h
+          <div class="row">
+            <div class="span5">h1</div>
+            <div class="span5">h2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <%= yield %>
+  </body>
+</html>
