@@ -1,0 +1,18 @@
+section
+{
+  float: left;
+  width: 250px;
+}
+
+#col1 img
+{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000000;
+}
+
+#col2 img
+{
+  width: 25px;
+  height: 25px;
+}

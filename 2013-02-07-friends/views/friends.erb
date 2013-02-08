@@ -1,0 +1,26 @@
+<% @rows.each do |row| %>
+  <section>
+    <div id='col1'>
+      <img src='<%= row['image'] %>'>
+    </div>
+    <div id='col2'>
+      <p>
+        <%= row['name'] %>
+      </p>
+      <p>
+        <%= row['age'] %>
+      </p>
+      <p>
+        <%= row['gender'] %>
+      </p>
+      <p>
+        <img src='/images/twitter.png'>
+        <a href='<%= row['twitter'] %>' target='_blank'>twitter</a>
+      </p>
+      <p>
+        <img src='/images/octocat.png'>
+        <a href='<%= row['github'] %>' target='_blank'>github</a>
+      </p>
+    </div>
+  </section>
+<% end %>
