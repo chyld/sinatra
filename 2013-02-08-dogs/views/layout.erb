@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Dog</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/new'>New Dog</a></li>
+        <li><a href='/dogs'>Dogs</a></li>
+
+        <% @nav_rows.each do |row| %>
+          <li><a href='/dogs/<%= row['breed'] %>'><%= row['breed'] %></a></li>
+        <% end %>
+
+      </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
