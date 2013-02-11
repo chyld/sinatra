@@ -1,0 +1,15 @@
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="/">MemeTube</a>
+    <ul class="nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/new">New</a></li>
+      <li><a href="/videos">Videos</a></li>
+
+      <% @nav_rows.each do |row| %>
+        <li><a href='/videos/<%= row['genre'] %>'><%= row['genre'] %></a></li>
+      <% end %>
+
+    </ul>
+  </div>
+</div>

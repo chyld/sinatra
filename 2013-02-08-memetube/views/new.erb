@@ -1,0 +1,15 @@
+<form method='post' action='<%= @row.nil? ? "/create" : "/videos/#{@row['id']}" %>'>
+  <fieldset>
+    <legend>Video Form</legend>
+    <label>Title</label>
+    <input value='<%= @row['title'] if @row %>' type='text' name='title' autofocus>
+    <label>Description</label>
+    <input value='<%= @row['description'] if @row %>' type='text' name='description'>
+    <label>Url</label>
+    <input value='<%= @row['url'] if @row %>' type='text' name='url'>
+    <label>Genre</label>
+    <input value='<%= @row['genre'] if @row %>' type='text' name='genre'>
+    <br>
+    <button><%= @row.nil? ? "New Video" : "Edit Video"  %></button>
+  </fieldset>
+</form>
